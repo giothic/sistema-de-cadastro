@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #e0c3fc, #8ec5fc);
+    padding: 20px;
+    color: #333;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeIn 0.6s forwards;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #5b2e91;
+    font-size: 2em;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    margin: 10px 0;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus {
+    border-color: #5b2e91;
+    box-shadow: 0 0 5px rgba(91, 46, 145, 0.5);
+    outline: none;
+}
+
+button {
+    padding: 15px;
+    background-color: #5b2e91;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #4a2371;
+    transform: translateY(-2px);
+}
+
+#alunosList {
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+    transition: background-color 0.3s;
+}
+
+th {
+    background-color: #5b2e91;
+    color: white;
+}
+
+td:hover {
+    background-color: rgba(91, 46, 145, 0.1);
+}
+
+a {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #5b2e91;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #4a2371;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
